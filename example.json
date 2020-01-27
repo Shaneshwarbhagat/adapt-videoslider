@@ -1,0 +1,37 @@
+{
+    "_id":"c-06",
+    "_parentId":"b-06",
+    "_type":"component",
+    "_component":"videoslider",
+    "_classes":"",
+    "_setCompletionOn": "play",
+    "comment":"Below attributes 'startingImage' 'startingImageAlt' are for Slider if creating through CSS. If using this 1st element of _items should not have src as it is of no use. Here 'setSlideValue' is used to move image to left using provided number inside it.",
+    "startingImage":"course/en/video/sample.mp4",
+    "startingImageAlt":"",
+    "_items": [
+        {
+        "title": "Video Title 1",
+        "alt": "alt text",
+        "src": "course/en/video/sample.mp4",
+        "posterImage": "course/en/images/videobanner.jpg",
+        "setSlideValue":"0%"
+        },
+        {
+        "title": "Video Title 2",
+        "alt": "alt text",
+        "src": "course/en/video/sample2.mp4",
+        "posterImage": "course/en/images/start.jpg",
+        "slideValue":"-20%"
+        },
+        {
+        "title": "Video Title 3",
+        "alt": "alt text",
+        "src": "course/en/video/sample3.mp4",
+        "posterImage": "course/en/video/c40.jpg",
+        "slideValue":"40"
+        }
+    ],
+    "navButton":"Continue Assessment",	
+    "navigateTo":"#/id/co-10",
+    "_comment": "navigateTo is for navigating to certain page of adapt"
+}

@@ -1,0 +1,52 @@
+<div class="videoslider-inner component-inner">
+    {{> component this}}
+    <div class="video-slider-widget component-widget">
+
+        {{!--  CSS Slider Starts    --}}
+        {{!-- <div class="slidershow">
+            <div class="slides">
+                <div class="slide s1">  
+                    <video width="100%" height="auto" id="myvid" autoplay controls class="videoSlide">
+                        <source src="{{startingImage}}"></source>
+                    </video> --}}
+                   {{!--<img src="{{startingImage}}" alt="{{startingImageAlt}}">--}}
+                {{!-- </div>       
+                {{#each _items}}
+                <div class= "slide">
+                    <video width="100%" height="auto" id="myvid" class="videoSlide" controls >
+                        <source src="{{src}}"></source>
+                    </video> --}}
+                   {{!--<img src="{{src}}" alt="{{alt}}">--}}
+                {{!-- </div>      
+                {{/each}}                           
+            </div>
+
+            <div class="videoNavigation">
+                {{#each _items}}
+                   index: {{@index}} <label class="bar" data-index="{{@index}}"></label>    
+                {{/each}} 
+            </div>  
+        </div> --}}
+        {{!-- CSS slider ends --}}
+
+
+        {{!-- JS Slider starts --}}
+        <div class="slideshow-container">
+            {{#each _items}}
+            <div class="mySlides fade">
+               <video width="100%" height="auto" id="myvideo" class="videoSlide" controls controlsList="nodownload" poster="{{posterImage}}">
+                        <source src="{{src}}"></source>
+                </video>
+                <div class="overlay" >
+                    <p><i>{{title}}</i></p>
+                </div>
+            </div>
+            {{/each}}  
+        </div>
+        <div class="navButton buttonSlide" id="navbtn">
+            <a href="{{{navigateTo}}}" target="_self"><button>{{navButton}}</button></a>
+        </div>
+        
+
+    </div>   
+</div>
